@@ -1,151 +1,87 @@
 <template>
-  <v-container>
-    <v-row class="text-center">
-      <v-col cols="12">
-        <v-img
-          :src="require('../assets/logo.svg')"
-          class="my-3"
-          contain
-          height="200"
-        />
-      </v-col>
-
-      <v-col class="mb-4">
-        <h1 class="display-2 font-weight-bold mb-3">
-          Welcome to Vuetify
-        </h1>
-
-        <p class="subheading font-weight-regular">
-          For help and collaboration with other Vuetify developers,
-          <br>please join our online
-          <a
-            href="https://community.vuetifyjs.com"
-            target="_blank"
-          >Discord Community</a>
-        </p>
-      </v-col>
-
-      <v-col
-        class="mb-5"
-        cols="12"
-      >
-        <h2 class="headline font-weight-bold mb-3">
-          What's next?
-        </h2>
-
-        <v-row justify="center">
-          <a
-            v-for="(next, i) in whatsNext"
-            :key="i"
-            :href="next.href"
-            class="subheading mx-3"
-            target="_blank"
-          >
-            {{ next.text }}
-          </a>
-        </v-row>
-      </v-col>
-
-      <v-col
-        class="mb-5"
-        cols="12"
-      >
-        <h2 class="headline font-weight-bold mb-3">
-          Important Links
-        </h2>
-
-        <v-row justify="center">
-          <a
-            v-for="(link, i) in importantLinks"
-            :key="i"
-            :href="link.href"
-            class="subheading mx-3"
-            target="_blank"
-          >
-            {{ link.text }}
-          </a>
-        </v-row>
-      </v-col>
-
-      <v-col
-        class="mb-5"
-        cols="12"
-      >
-        <h2 class="headline font-weight-bold mb-3">
-          Ecosystem
-        </h2>
-
-        <v-row justify="center">
-          <a
-            v-for="(eco, i) in ecosystem"
-            :key="i"
-            :href="eco.href"
-            class="subheading mx-3"
-            target="_blank"
-          >
-            {{ eco.text }}
-          </a>
-        </v-row>
-      </v-col>
-    </v-row>
-  </v-container>
+  <div>
+    <h1>Hedwige Fotoh Uhllanda</h1>
+    <h3>Full-Stack Developer</h3>
+    
+    <div class="logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/2367px-Vue.js_Logo_2.svg.png" alt="vue">
+      
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png" alt="css">
+      
+      <img src="https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png" alt="html">
+      
+      <img src="https://www.logolynx.com/images/logolynx/00/00429ca224699ddf60ce05b46ef08709.jpeg" alt="flask">
+      
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/2048px-Python-logo-notext.svg.png" alt="python">
+      
+      <img src="https://cdn.iconscout.com/icon/free/png-256/javascript-2752148-2284965.png" alt="javascript">
+      
+      <img src="https://cdn-icons-png.flaticon.com/512/1265/1265531.png" alt="sql">
+      
+      <img src="https://mariadb.com/wp-content/uploads/2019/11/mariadb-logo-vert_white-transparent.png" alt="mariadb">
+      
+    </div>
+  </div>
 </template>
 
 <script>
   export default {
     name: 'HelloWorld',
 
-    data: () => ({
-      ecosystem: [
-        {
-          text: 'vuetify-loader',
-          href: 'https://github.com/vuetifyjs/vuetify-loader',
-        },
-        {
-          text: 'github',
-          href: 'https://github.com/vuetifyjs/vuetify',
-        },
-        {
-          text: 'awesome-vuetify',
-          href: 'https://github.com/vuetifyjs/awesome-vuetify',
-        },
-      ],
-      importantLinks: [
-        {
-          text: 'Documentation',
-          href: 'https://vuetifyjs.com',
-        },
-        {
-          text: 'Chat',
-          href: 'https://community.vuetifyjs.com',
-        },
-        {
-          text: 'Made with Vuetify',
-          href: 'https://madewithvuejs.com/vuetify',
-        },
-        {
-          text: 'Twitter',
-          href: 'https://twitter.com/vuetifyjs',
-        },
-        {
-          text: 'Articles',
-          href: 'https://medium.com/vuetify',
-        },
-      ],
-      whatsNext: [
-        {
-          text: 'Explore components',
-          href: 'https://vuetifyjs.com/components/api-explorer',
-        },
-        {
-          text: 'Select a layout',
-          href: 'https://vuetifyjs.com/getting-started/pre-made-layouts',
-        },
-        {
-          text: 'Frequently Asked Questions',
-          href: 'https://vuetifyjs.com/getting-started/frequently-asked-questions',
-        },
-      ],
-    }),
+    
   }
 </script>
+
+<style lang="scss" scoped>
+
+
+h1{
+  color:#14213D;
+  text-align: center;
+  margin: 25px;
+  font-family:cursive;
+  font-size: 50px;
+  background-color: #FCA311;
+  background-image: linear-gradient(rgb(255, 136, 0), #FCA311);
+  border: #FCA311 1px solid;
+  
+
+}
+h3{
+  color: #E8E8E8;
+  text-align: center;
+  margin: 30px;
+  font-size: 28px;
+  font-family: cursive;
+  background-image: linear-gradient(black, #0A111F);
+  border: black 1px solid;
+  
+}
+.logo{
+  margin-left: 15%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr  ;
+  
+  img{
+    margin: 25px;
+    width: 20%;
+    height:65px;
+    background-color: #0A111F;
+    padding: 3px;
+    border: black 1px solid;
+  }
+  p{
+    color: #040403;
+    margin: 10px;
+  }
+}
+.picture{
+  background-color: #E8E8E8;
+  img{
+    width: 25%;
+    margin: 40px;
+    border: #040403 2px double;
+  }
+  
+}
+</style>
