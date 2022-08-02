@@ -45,4 +45,40 @@
     }
     }
 }
+@media only screen and (max-width: 550px){
+  .infos{
+    a{
+        margin-left: 20.5%;
+        img{
+        width: 7%;
+
+    } 
+    }
+    
+    
+  }
+  
+}
+@media only screen and (min-width: 768px) {
+  .infos{
+    a{
+        img{
+        width: 3.5%;
+        }
+    }
+    
+    
+    
+}
+}
+@media only screen and (min-width: 1200px) {
+  .infos{
+    a{
+        img{
+            width: 2.5%;
+        }
+    }
+    
+}
+}
 </style>

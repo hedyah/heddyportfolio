@@ -75,13 +75,34 @@ h3{
     margin: 10px;
   }
 }
-.picture{
-  background-color: #E8E8E8;
-  img{
-    width: 25%;
-    margin: 40px;
-    border: #040403 2px double;
+@media only screen and (max-width: 550px){
+  .logo{
+    grid-template-columns: 1fr 1fr;
+    img{
+      width: 28%;
+    }
   }
   
+}
+@media only screen and (min-width: 768px) {
+  .logo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    img{
+      width: 32%;
+    }
+    
+    
+}
+}
+@media only screen and (min-width: 1200px) {
+  .logo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    img{
+      width: 20%;
+    }
+    
+}
 }
 </style>

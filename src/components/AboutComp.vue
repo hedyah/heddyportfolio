@@ -59,4 +59,38 @@
     
   }
 }
+@media only screen and (max-width: 550px){
+  .picture{
+    img{
+        width: 50%;
+        margin-left: 25%;
+    }
+    
+  }
+  
+}
+@media only screen and (min-width: 768px) {
+    .picture{
+    img{
+        width: 40%;
+        margin-left: 30%;
+    }
+    
+    }
+    
+    
+}
+
+@media only screen and (min-width: 1200px) {
+  .picture{
+    img{
+        width: 25%;
+        margin-left: 38%;
+    }
+    
+  }
+    
+    
+}
+
 </style>

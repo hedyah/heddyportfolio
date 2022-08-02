@@ -20,7 +20,7 @@
         <div>
             <h3>Trivia Project</h3>
             <img src="@/assets/trivia.png" alt="">
-            <p>This project we had to bring our own ideas, and I created a trivia webiste that allows users to play fun quizzes and 
+            <p>This project we had to bring our own ideas, and I created a trivia website that allows users to play fun quizzes and 
                 create quizzes when they make an account. I used HTML, CSS, VUE, Vuetify, Flask, Python, Apache, MariaDB and SQL.</p>
             <v-btn block color="black"><a href="https://github.com/hedyah/trivia-frontend.git">Front end code</a></v-btn>
             <v-btn block color="black"><a href="https://github.com/hedyah/trivia-backend.git">Back end code</a></v-btn>
@@ -81,5 +81,40 @@
             margin: 10px;
         }
     }
+}
+@media only screen and (max-width: 550px){
+  .img{
+    display: none;
+  }
+  .project{
+    grid-template-columns: 1fr;
+    
+  }
+  
+}
+@media only screen and (min-width: 768px) {
+  .img{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    img{
+      width: 100%;
+    }
+    
+    
+}
+}
+@media only screen and (min-width: 1200px) {
+  .project{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    div{
+       img{
+        width: 90%;
+        margin-left: 5%;
+    } 
+    }
+    
+    
+}
 }
 </style>
